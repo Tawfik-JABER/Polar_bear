@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
-    --transition-- : .8s;
+    --transition--: .8s;
 }
+
 body {
     background-color: #7fd9d0;
-    cursor: url('./seal.png');
 }
 
 .container {
@@ -17,7 +18,9 @@ body {
     border: 5px ridge wheat;
     position: relative;
     margin: 5% auto;
+    cursor: url('seal.png'), auto;
 }
+
 .container h3 {
     position: absolute;
     content: "";
@@ -26,6 +29,7 @@ body {
     height: 100%;
     background-color: transparent;
 }
+
 .container .body {
     width: 98%;
     height: calc(100% - 100px);
@@ -36,6 +40,7 @@ body {
     border-top-right-radius: 124px;
     border-top-left-radius: 124px;
 }
+
 .container .body::before {
     content: "";
     position: relative;
@@ -49,6 +54,7 @@ body {
     border-radius: 50%;
     transition: var(--transition--);
 }
+
 .container .body::after {
     content: "";
     position: absolute;
@@ -61,6 +67,7 @@ body {
     border-radius: 50%;
     transition: var(--transition--);
 }
+
 .container .body .face {
     position: absolute;
     width: 70px;
@@ -72,6 +79,7 @@ body {
     border-radius: 40px;
     transition: var(--transition--);
 }
+
 .container .body .right_eyes {
     position: absolute;
     width: 20px;
@@ -82,6 +90,7 @@ body {
     left: 32%;
     transition: var(--transition--);
 }
+
 .container .body .left_eyes {
     position: absolute;
     width: 20px;
@@ -92,6 +101,7 @@ body {
     left: 60%;
     transition: var(--transition--);
 }
+
 .nose {
     position: absolute;
     width: 50px;
@@ -102,6 +112,7 @@ body {
     left: 39.5%;
     transition: var(--transition--);
 }
+
 .nose::before {
     content: "";
     position: absolute;
@@ -113,6 +124,7 @@ body {
     border-radius: 50%;
     transition: var(--transition--);
 }
+
 .mouth {
     position: absolute;
     width: 20px;
@@ -122,51 +134,65 @@ body {
     left: 46%;
     transition: var(--transition--);
 }
-                   /* left side look */
+
+/* left side look */
 .container:hover .body::after {
-    transform: translate(-1px,15px);
+    transform: translate(-1px, 15px);
 }
+
 .container:hover .body::before {
-    transform: translate(-3px,15px);
+    transform: translate(-3px, 15px);
 }
+
 .container:hover .right_eyes {
     transform: translate(35px, -24px);
 }
+
 .container:hover .left_eyes {
     transform: translate(17px, -25px);
 }
+
 .container:hover .face {
     transform: translate(-5px, -30px);
 }
+
 .container:hover .nose {
     transform: translate(40px, -50px);
 }
+
 .container:hover .mouth {
     height: 20px;
     transform: translate(41px, -50px);
     border-radius: 50%;
 }
-                    /* right side look */
+
+/* right side look */
 .container h3:hover .body::before {
-    transform: translate(-3px,15px);
+    transform: translate(-3px, 15px);
 }
+
 .container h3:hover .right_eyes {
     transform: translate(-20px, -24px);
 }
+
 .container h3:hover .left_eyes {
     transform: translate(-25px, -24px);
 }
+
 .container h3:hover .face {
     transform: translate(-60px, -30px);
 }
+
 .container h3:hover .nose {
     transform: translate(-32px, -50px);
 }
+
 .container h3:hover .mouth {
     height: 20px;
     transform: translate(-31px, -50px);
     border-radius: 50%;
 }
+
 /* span {
     font-size: 104px;
     font-weight: bold;
